@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="iJ6gh4eL0nVitWXpdsGuDp6W1TfmhtzhB2i30n4Qtok" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='img/header_1_esT_icon.ico' type='image/x-icon'>
+    <title>ЕМКО и АлБЕГ - Производител на Сифони за баня и ВиК части</title>
+    <meta name="description" content="Производство на санитарни изделия: пластмасова санитарна арматура и изделия за кухненско оборудване - сифони за мивки, коляно холендър, маншони и гайки за тоалетно казанче, производствен цех, инструментален цех за производство на шприц форми и склад">
+    <meta name="keywords" content="производство, санитарни, изделия, пластмасови, санитарни, арматури, кухненско, оборудване, сифони, мивки, преливници, преливник, коляно, холендър, маншони, гайки, тоалетно, казанче, производствен, цех, инструментален, цех, шприц, форми, склад">
+    <script src="https://kit.fontawesome.com/294076f20f.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+
+    <script src="js/mustache.min.js"></script>
+    <script src="js/template-data.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/code.js"></script>
+</head>
+
+<body>
+    <div class="fixed-nav-bar">
+        <img src="img/output-onlinejpgtools.jpg" alt="">
+        <div class="logo"><span>ЕМКО</span> и АлБЕГ</div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#products">Продукти</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <input type="checkbox" id="menuButton" />
+        <label for="menuButton" class="menu-button-label">
+            <div class="white-bar"></div>
+            <div class="white-bar"></div>
+            <div class="white-bar"></div>
+            <div class="white-bar"></div>
+        </label>
+    </div>
+    <div class="the-bass">
+        <div class="rela-block drop-down-container">
+            <div class="drop-down-item">
+                <a href="#products">
+                    <h3>Продукти</h3>
+                </a>
+            </div>
+        </div>
+        <div class="rela-block drop-down-container">
+            <div class="drop-down-item">
+                <a href="#contacts">
+                    <h3>Контакти</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="secondPart">
+        <div class="content">
+            <h3>EMKO АВ ООД</h3>
+            <h5>град Кюстендил</h5>
+            <p>Предприятието е основано през 1989 година. Основната му дейност е производство на изделия от пластмаса и метал. Специализирано е в производство на пластмасова санитарна арматура. Произвежда пластмасови изделия и детайли за кухненско оборудване.
+                Продуктите на фирмата отговарят на Българските държавни стандарти за качество.</p>
+        </div>
+        <img id="backgroundPhoto" src="img/BackgroundPhoto.jpg" alt="">
+    </section>
+
+    <section class="poster-border">
+        <img id="poster" src="img/Plakat-1.jpg" alt="">
+    </section>
+
+    <span class="anchor" id="products"></span>
+    <section id="choose" class="buttonBar">
+        <div class="container">
+            <a id="sifoni114Btn" class="btn btn-5">Сифони 1&#188;"</a>
+            <a id="sifoni112Btn" class="btn btn-5">Сифони 1&#189;"</a>
+            <a id="dvoiniSifoni112Btn" class="btn btn-5">Двойни сифони 1&#189;"</a>
+            <a id="podoviSifoniBtn" class="btn btn-5">Подови сифони и сифони за подушово корито</a>
+            <a id="gofriraniTrubiBtn" class="btn btn-5">Сифони с гофрирана тръба</a>
+            <a id="ventilaciqBtn" class="btn btn-5">Вентилация</a>
+            <a id="manshoniBtn" class="btn btn-5">Маншони</a>
+            <a id="vikChastiBtn" class="btn btn-5">ВИК части</a>
+            <a id="krakaBtn" class="btn btn-5">Изделия за кухненско оборудване</a>
+        </div>
+    </section>
+    <section>
+        <script id="sifoni114Scr" type="x-tmpl-mustache">
+            {{#sifoni114}} {{ > sifon114}} {{/sifoni114}}
+        </script>
+        <script id="sifoni112Scr" type="x-tmpl-mustache">
+            {{#sifoni112}} {{ > sifon112}} {{/sifoni112}}
+        </script>
+        <script id="dvoiniSifoni112Scr" type="x-tmpl-mustache">
+            {{#dvoiniSifoni112}} {{ > dvoenSifon112}} {{/dvoiniSifoni112}}
+        </script>
+        <script id="podoviSifoniScr" type="x-tmpl-mustache">
+            {{#podoviSifoni}} {{ > podovSifon}} {{/podoviSifoni}}
+        </script>
+        <script id="gofriraniTrubiScr" type="x-tmpl-mustache">
+            {{#gofriraniTrubi}} {{ > gofriranaTruba}} {{/gofriraniTrubi}}
+        </script>
+        <script id="ventilaciqScr" type="x-tmpl-mustache">
+            {{#ventilaciq}} {{ > ventilator}} {{/ventilaciq}}
+        </script>
+        <script id="manshoniScr" type="x-tmpl-mustache">
+            {{#manshoni}} {{ > manshon}} {{/manshoni}}
+        </script>
+        <script id="vikChastiScr" type="x-tmpl-mustache">
+            {{#vikChasti}} {{ > vikChast}} {{/vikChasti}}
+        </script>
+        <script id="krakaScr" type="x-tmpl-mustache">
+            {{#kraka}} {{ > krak}} {{/kraka}}
+        </script>
+        <section>
+            <div id="sifoni114" class="products-list"></div>
+            <div id="sifoni112" class="products-list"></div>
+            <div id="dvoiniSifoni112" class="products-list"></div>
+            <div id="podoviSifoni" class="products-list"></div>
+            <div id="gofriraniTrubi" class="products-list"></div>
+            <div id="ventilaciq" class="products-list"></div>
+            <div id="manshoni" class="products-list"></div>
+            <div id="vikChasti" class="products-list"></div>
+            <div id="kraka" class="products-list"></div>
+        </section>
+    </section>
+    <span class="anchor" id="contacts"></span>
+    <section id="contact" class="footer">
+        <div class="contacts">
+            <!-- <h2>Контакти</h2> -->
+            <p>EMKO АВ ООД</p>
+            <p>град Кюстендил, ул. Николичевски път 43</p>
+            <p>Тел: 0888 820 902, 078/52 31 91</p>
+            <p>Мобилен: 0888 300 961</p>
+            <p>Емайл: <a href="mailto:info@emko-albeg.com">info@emko-albeg.com</a></p>
+            <p>Сайт: www.emko-albeg.com</p>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2524.465187279174!2d22.704176114958564!3d42.30044144685802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aa9c0cd7262bc9%3A0x1ad0a1217517e6ac!2sul.%20%22Nikolichevski%20pat%22%2043%2C%202504%20Northern%20Industrial%20Zone%2C%20Kyustendil!5e1!3m2!1sen!2sbg!4v1575373324192!5m2!1sen!2sbg"
+                frameborder="0" style="border:0;" scrolling="no" allowfullscreen=""></iframe>
+        </div>
+    </section>
+    <!-- <footer class="footer-line">
+        <p>EMKO АВ ООД 2019</p>
+    </footer> -->
+</body>
+
+</html>

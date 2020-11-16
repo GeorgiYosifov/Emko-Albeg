@@ -1,0 +1,121 @@
+.products-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media all and (max-width: 900px) {
+    .products-list {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+}
+.products-list::after{
+    display: block;
+    content: '';
+    flex: 0 0 50%; 
+}
+.product {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 23%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    overflow: hidden; 
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+.image-main {
+    background: #ccc;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    overflow: hidden;
+    position: relative;
+}
+.image-main::after {
+    background-color: #fff;
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+.image-main-img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 50%; left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
+/* Hover */
+.popUp {
+    background-color:rgba(17, 17, 17, 0.9);
+    padding: 2rem;
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 20px;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+.popUp img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+@media all and (max-width: 900px) {
+    .popUp {
+        min-width: 80%;
+        min-height: auto;  
+    }
+}
+@media all and (max-width: 450px) {
+    .popUp {
+        min-width: 80%;
+        min-height: auto;  
+    }
+}
+.product-media .noneCloseBtn {
+    display: none;
+}
+.closeBtn {
+    color: #696B6F;
+    display: block;
+    font-size: 2em;
+    position: absolute;
+    top: 5%; left: 5%;
+    cursor: pointer;
+}
+.closeBtn:hover{
+    color: #fff;
+}
+.product-media .noneExpandBtn {
+    display: none;
+}
+.expandBtn {
+    color: rgb(220, 228, 225);
+    display: block;
+    font-size: 1.2em;
+    position: absolute;
+    top: 5%; left: 5%;
+    cursor: pointer;
+}
+.expandBtn:hover{
+    color: #000;
+}
+
+.product-content {
+    flex-grow: 1;
+    padding: 1rem 1.2rem;
+    border: solid #ccc;
+    border-width: 1px 0;
+}
+.product-content-inner p {
+    font-size: 1.10em;
+    text-align: left;
+}
+.product-content-inner p:last-child {
+    padding: 0;
+}
